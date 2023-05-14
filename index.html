@@ -12,31 +12,42 @@
 </head>
 
 <body>
-  <div class="banner">
-    <video width: 100% autoplay loop muted plays-inline>
-      <source src="https://player.vimeo.com/external/297888387.sd.mp4?s=03408b062efde00c20436e7f7d02f3a5d1dd31f8&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
-    </video>
-
-    <div class="content">
-      <h1>WEATHER FORCAST</h1>
-
-      <form class="row gy-2 gx-3 align-items-center" action="/" method="post">
-        <div class="col-auto con">
-
-          <input type="text" class="form-control" id="autoSizingInput"  name="san" placeholder="City Name" fdprocessedid="452q4s">
-          <button type="submit">Search</button>
-        </div>
 
 
-      </form>
+  <header class="main">
+       <div class="main">
+<!-- the below video is availble on coverr.co. download it here - https://coverr.co/videos/Forrest%20Beach%20Ocean--ef5c5297-ce85-47b5-8c78-da8bc38fdd7c -->   <video src="https://player.vimeo.com/external/297888387.sd.mp4?s=03408b062efde00c20436e7f7d02f3a5d1dd31f8&profile_id=164&oauth2_token_id=57447761" autoplay loop muted></video>
+       </div>
+       <div class="overlay"></div>
+       <div class="content">
+           <h1>WEATHER FORCAST</h1>
+           <form class="row gy-2 gx-3 align-items-center" action="/temp" method="post">
+             <div class="col-auto con">
 
-    </div>
-  </div>
+               <input type="text" class="form-control ff" id="autoSizingInput"  name="san" placeholder="City Name" fdprocessedid="452q4s">
+              <div class="submit">
+                <button class="btn btn-outline-light ff"type="submit">Search</button>
 
 
-  <script src="app.js">
+              </div>
+             </div>
+
+
+           </form>
+
+
+
+       </div>
+
+   </header>
+
+
+
+
+  <script src="./app.js">
 
   </script>
+
 </body>
 
 </html>
