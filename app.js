@@ -40,12 +40,14 @@ app.post("/temp", (req, res) => {
      const icon = wdata.weather[0].icon
      const feel_like = wdata.main.feels_like
      const hum=wdata.main.humidity
-     const url =" src=https://openweathermap.org/img/wn/"+icon+"@2x.png ";
+     const main = wdata.weather[0].main
 
+     const url =" src=https://openweathermap.org/img/wn/"+icon+"@2x.png ";
+  console.log(wdata)
 
      const speed= wdata.wind.speed
 
-             res.render("index",{sandesh:temp,city:city,feel_like:feel_like,speed:speed,icon:url,hum:hum})
+             res.render("index",{sandesh:temp,city:city,feel_like:feel_like,speed:speed,icon:url,hum:hum,main:main})
     })
   });
 

@@ -71,7 +71,8 @@ h1{
 
                       backdrop-filter: blur(14px);
                       background-color: rgba(13, 13, 13, 0.2);
-                      padding: 10px;
+                      padding: 30px;
+                      margin: 20px;
                       text-align: center;
         }
 
